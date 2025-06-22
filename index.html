@@ -2,21 +2,40 @@
 <html>
 <head>
   <title>Redirecting...</title>
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://redirecting-6p6.pages.dev/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Redirect Page with Facebook Comments" />
+
+  <!-- Facebook SDK -->
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous"
+    src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0">
+  </script>
+
   <script>
+    // Prevent back navigation
     history.pushState(null, null, window.location.href);
     window.onpopstate = function () {
       window.location.href = "https://adstera-7v8.pages.dev/";
     };
 
-    // Redirect to the CPM link after short delay
+    // Redirect after 5 seconds (allow time for FB comments to load)
     setTimeout(function() {
       window.location.href = "https://www.profitableratecpm.com/kf3qprjcu?key=f4646d0b196b3e6ba057b2f620d35491";
-    }, 10);
+    }, 5000);
   </script>
 </head>
 <body>
-  <p>Redirecting you...</p>
+  <h2>🔁 Redirecting You in 5 Seconds...</h2>
+  <p>If not redirected, <a href="https://www.profitableratecpm.com/kf3qprjcu?key=f4646d0b196b3e6ba057b2f620d35491">click here</a>.</p>
+
+  <!-- Facebook Comments Plugin -->
+  <div class="fb-comments"
+       data-href="https://redirecting-6p6.pages.dev/"
+       data-width=""
+       data-numposts="3">
+  </div>
 </body>
 </html>
-
-
